@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.btn {
+  @apply py-[3px] px-[8px] font-normal text-sm  bg-transparent text-white border rounded-[4px] ;
+}
+.bg-img{
+  background-image: url('/images/main-image.jpg');
+}
+
+.btn-red-sm {
+  @apply py-[3px] px-[8px] text-sm font-normal   bg-[red] text-white rounded-[4px] ;
+}
